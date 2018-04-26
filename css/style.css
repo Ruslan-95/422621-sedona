@@ -58,14 +58,16 @@ a {
 }
 
 .features-reason-description {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     max-width: 306px;
     margin-left: 47px;
+    line-height: 21px;
 }
 
 .reason-description {
-    line-height: 18px;
+    line-height: 21px;
     max-width: 302px;
+    margin-top: 10px;
 }
 
 .reason-title {
@@ -97,35 +99,23 @@ a {
     margin-top: 23px;
 }
 
-.features-first-list li:nth-child(1) > p {
-    line-height: normal;
-    padding-top: 3px;
-}
-
-.features-first-list li:nth-child(2) > p {
-    margin-top: 4px;
-    padding-top: 2px;
-    line-height: normal;
-}
-
-.features-first-list li:nth-child(3) > p {
-    margin-top: -5px;
-    margin-bottom: 5px;
-}
-
 .features-reason-title.second {
-    line-height: 1;
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    line-height: 21px;
 }
 
 .reason-number.second {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .features-reason-description.second {
-    margin-bottom: 25px;
     max-width: 280px;
     margin-left: 59px;
+    margin-top: 0;
+    line-height: 21px;
+    margin-bottom: 13px;
 }
 
 .offer-title {
@@ -296,6 +286,12 @@ a {
 
 .living-conditions .filter-name {
     padding-right: 10px;
+    line-height: 26px;
+    margin-left: 8px;
+}
+
+.living-type .custom-checkbox {
+    margin-left: 25px;
 }
 
 .checkbox + .custom-checkbox {
@@ -305,8 +301,8 @@ a {
     height: 27px;
     vertical-align: middle;
     background: url(../img/checkbox-off.svg) no-repeat;
-    margin-left: 5px;
-    padding-right: 5px;
+    margin-left: 8px;
+    padding-right: 0;
 }
 
 .checkbox:checked + .custom-checkbox {
@@ -366,9 +362,9 @@ a {
 }
 
 .filter-point {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
     width: 180px;
-
+    line-height: 21px;
 }
 
 .filter-name {
@@ -376,7 +372,7 @@ a {
 }
 
 .living-type-list .filter-name {
-    margin-left: 3px;
+    margin-left: 11px;
 }
 
 .living-type {
@@ -665,7 +661,8 @@ fieldset {
 }
 
 .sort-list li:nth-child(2) span {
-    margin-left: 10px;
+    margin-left: 13px;
+    margin-right: 7px;
 }
 
 .sort-item a:hover {
@@ -695,7 +692,7 @@ fieldset {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 50%;
+    width: 516px;
     max-width: 520px;
     margin: 0;
     margin-top: 16px;
