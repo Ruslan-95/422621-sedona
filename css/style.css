@@ -607,7 +607,7 @@ fieldset {
 }
 
 .catalog-filter {
-    background-image: url("../img/background/filter_background.jpg");
+    background-image: url(../img/background/filter_background.jpg);
     background-repeat: no-repeat;
     background-color: #81b3d2;
     color: #f2f2f2;
