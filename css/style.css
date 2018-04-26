@@ -40,6 +40,11 @@ a {
     padding-top: -55px;
 }
 
+.main-slogan {
+    width: 600px;
+    margin-left: 300px;
+}
+
 .main-slogan,
 .features-item {
     font-size: 21px;
@@ -54,10 +59,13 @@ a {
 
 .features-reason-description {
     margin-bottom: 0;
+    max-width: 306px;
+    margin-left: 47px;
 }
 
 .reason-description {
     line-height: 18px;
+    max-width: 302px;
 }
 
 .reason-title {
@@ -116,6 +124,8 @@ a {
 
 .features-reason-description.second {
     margin-bottom: 25px;
+    max-width: 280px;
+    margin-left: 59px;
 }
 
 .offer-title {
