@@ -265,17 +265,14 @@ a {
     list-style: none;
 }
 
-.living-conditions {
-    margin-top: 27px;
-}
-
-.living-type {
-    margin-top: 30px;
-}
-
 .living-conditions .fieldset-legend {
-    padding-right: 7px;
     margin-bottom: 11px;
+    margin-left: -4px;
+}
+
+.living-type .fieldset-legend {
+    margin-bottom: 18px;
+    margin-left: -4px;
 }
 
 .living-conditions {
@@ -289,7 +286,9 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 313px;
+    margin-top: 26px;
     padding-left: 73px;
+    text-align: left;
 }
 
 .living-conditions .filter-name {
@@ -330,43 +329,14 @@ a {
 }
 
 .living-type-list {
-    padding-left: 9px;
-}
-
-.living-type-list li:first-child > label {
-    position: relative;
-    right: 7px;
-}
-
-.living-type-list li:nth-child(2) > label {
-    position: relative;
-    right: 21px;
+    padding-left: 0;
+    margin-left: -11px;
+    margin-top: 9px;
 }
 
 .living-conditions-list {
-    padding-left: 0;
-    margin-left: -24px;
-}
-
-.living-type {
-    position: relative;
-    right: 31px;
-    bottom: 16px;
-}
-
-.living-conditions-list li:nth-child(1) .living-conditions-name {
-    position: relative;
-    right: 19px;
-}
-
-.living-conditions-list li:nth-child(2) .living-conditions-name {
-    position: relative;
-    right: 14px;
-}
-
-.living-conditions-list li:nth-child(3) .living-conditions-name {
-    position: relative;
-    right: 32px;
+    padding-left: 0px;
+    margin-left: -11px;
 }
 
 .filter-point {
@@ -393,8 +363,9 @@ a {
     flex-direction: column;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 488px;
-    padding-left: 4px;
+    width: 313px;
+    text-align: left;
+    margin-top: 26px;
 }
 
 .footer-hashtag-wrapper {
@@ -481,6 +452,7 @@ a {
 .features-first-reason .reason-title {
     width: 120px;
 }
+
 .features-second-reason .reason-title {
     width: 151px;
 }
@@ -648,15 +620,7 @@ fieldset {
     height: 13px;
     font-weight: 700;
     margin-bottom: 24px;
-    position: relative;
     right: 14px;
-}
-
-.living-type .fieldset-legend {
-    padding-right: 267px;
-    position: relative;
-    top: 13px;
-    right: 27px;
 }
 
 .search-sort-items .sort-link {
@@ -906,8 +870,9 @@ fieldset {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 310px;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-right: 72px;
+    margin-left: 175px;
 }
 
 .filter-range-title {
@@ -921,7 +886,6 @@ fieldset {
 }
 
 .price-controls {
-    position: relative;
     height: 32px;
     margin-bottom: 17px;
     font-size: 0;
@@ -934,25 +898,21 @@ fieldset {
 .price-controls::after {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-
     width: 2px;
     height: 22px;
-
     background: #ffffff;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    margin-left: -145px;
+    margin-top: 16px;
 }
 
 .price-controls label {
     display: inline-block;
-
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
-
     cursor: pointer;
 }
 
@@ -996,8 +956,6 @@ fieldset {
 }
 
 .range-controls {
-    position: relative;
-
     margin-bottom: 32px;
 }
 
@@ -1005,22 +963,19 @@ fieldset {
     height: 2px;
     margin-right: -8px;
     background: #ffffff;
+    margin-top: 3px;
 }
 
 .range-controls .bar {
     width: 80%;
     height: 2px;
-
     background: #ffffff;
 }
 
 .range-toggle {
     position: absolute;
-    top: -9px;
-
     width: 4px;
     height: 4px;
-
     background: #ababab;
     border: 8px solid #ffffff;
     border-radius: 50%;
@@ -1033,24 +988,27 @@ fieldset {
     background: #1c4f80;
 }
 
-.range-toggle-min {
-    left: 2px;
+.range-toggle-max {
+    position: absolute;
+    margin-left: 254px;
+    margin-top: -11px;
 }
 
-.range-toggle-max {
-    left: 254px;
+.range-toggle-min {
+    position: absolute;
+    margin-left: 2px;
+    margin-top: -11px;
 }
 
 .btn-transparent {
     display: block;
-    margin: 0 auto;
+    margin-left: 86px;
+    margin-right: 87px;
     padding: 6px 35px;
-
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
-
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -1067,17 +1025,13 @@ fieldset {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
-
     -webkit-clip-path: inset(100%);
-
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -1491,6 +1445,7 @@ input[type="radio"].visually-hidden {
 .site-navigation-left {
     text-align: left;
 }
+
 .site-navigation-right {
     text-align: right;
 }
