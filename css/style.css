@@ -103,6 +103,8 @@ a {
     margin-top: 10px;
     margin-bottom: 22px;
     line-height: 21px;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
 .reason-number.second {
@@ -470,6 +472,13 @@ a {
 .features-first-reason,
 .features-second-reason {
     color: #ffffff;
+}
+
+.features-first-reason .reason-title {
+    width: 120px;
+}
+.features-second-reason .reason-title {
+    width: 151px;
 }
 
 .features-second-reason {
