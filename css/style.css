@@ -153,7 +153,6 @@ a {
     flex-wrap: wrap;
     width: 1200px;
     min-height: 56px;
-
 }
 
 .main-header-logo {
@@ -180,29 +179,34 @@ a {
 }
 
 .site-navigation li {
+    padding-top: 14px;
+    width: 210px;
     margin-top: 13px;
 }
 
 .site-navigation li:first-child {
     position: relative;
-    right: 34px;
+    left: 27px;
+    bottom: 14px;
 }
 
 .site-navigation li:nth-child(2) {
     position: relative;
-    right: 97px;
+    right: 32px;
+    bottom: 13px;
 }
 
 .site-navigation li:nth-child(3) {
     position: relative;
-    left: 79px;
+    left: 28px;
     line-height: 26px;
-    top: 1px;
+    bottom: 13px;
 }
 
 .site-navigation li:last-child {
     position: relative;
-    left: 34px;
+    right: 26px;
+    bottom: 14px;
 }
 
 .main-navigation {
@@ -1487,7 +1491,6 @@ input[type="radio"].visually-hidden {
 .site-navigation-left {
     text-align: left;
 }
-
-.site-navigation-left {
+.site-navigation-right {
     text-align: right;
 }
