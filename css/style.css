@@ -305,8 +305,7 @@ a {
     padding-right: 0;
 }
 
-.custom-checkbox:focus,
-.custom-checkbox:hover {
+.checkbox:focus + span {
     outline: -webkit-focus-ring-color auto 5px;
 }
 
