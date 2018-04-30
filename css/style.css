@@ -180,6 +180,7 @@ a {
 }
 
 .site-navigation li {
+    padding-top: 14px;
     width: 210px;
     margin-top: 13px;
 }
