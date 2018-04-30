@@ -832,6 +832,7 @@ fieldset {
 
 .hotel-type {
     margin-right: 40px;
+    max-width: 100px;
 }
 
 .sort {
