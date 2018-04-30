@@ -142,17 +142,18 @@ a {
 .site-navigation {
     background-color: #ffffff;
     list-style: none;
-    margin: 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 1200px;
+    max-width: 1200px;
     min-height: 56px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main-header-logo {
@@ -185,28 +186,24 @@ a {
 }
 
 .site-navigation li:first-child {
-    position: relative;
-    left: 27px;
-    bottom: 14px;
+    margin-left: 28px;
+    margin-top: 0;
 }
 
 .site-navigation li:nth-child(2) {
-    position: relative;
-    right: 32px;
-    bottom: 13px;
+    margin-top: 0;
+    margin-left: 31px;
 }
 
 .site-navigation li:nth-child(3) {
-    position: relative;
-    left: 28px;
     line-height: 26px;
-    bottom: 13px;
+    margin-left: 150px;
+    margin-top: 0;
 }
 
 .site-navigation li:last-child {
-    position: relative;
-    right: 26px;
-    bottom: 14px;
+    margin-left: 35px;
+    margin-top: 0;
 }
 
 .main-navigation {
@@ -1266,6 +1263,7 @@ input[type="radio"].visually-hidden {
 
 .main-container {
     margin-bottom: -14px;
+    margin-top: -2px;
 }
 
 .site-navigation a:hover,
