@@ -1402,7 +1402,7 @@ input[type="radio"].visually-hidden {
     color: #81b3d2;
 }
 
-.active-catalog {
+.active-catalog a {
     color: #766357;
 }
 
