@@ -322,7 +322,8 @@ a {
     background: url(../img/checkbox-off2.svg) no-repeat;
 }
 
-.checkbox:checked:disabled + span + span, .checkbox:disabled + span + span {
+.checkbox:checked:disabled .filter-name,
+.checkbox:disabled .filter-name {
     color: #6a6a6a;
 }
 
@@ -1186,7 +1187,7 @@ input[type="radio"].visually-hidden {
     margin-right: -1px;
 }
 
-.people p:nth-child(2) > label {
+.people-row:nth-child(2) > label {
     margin-right: 24px
 }
 
