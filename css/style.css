@@ -48,7 +48,8 @@ a {
 .main-slogan,
 .features-item {
     font-size: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    margin-top: 17px;
 }
 
 .features-item {
@@ -83,20 +84,13 @@ a {
 
 .features-reason-title {
     font-size: 21px;
+    margin-top: 23px;
 }
 
 .features-first-list li:nth-child(1),
 .features-first-list li:nth-child(2) {
     padding-top: 4px;
     margin-bottom: 4px;
-}
-
-.features-first-list li:nth-child(1) > h3 {
-    margin-top: 21px;
-}
-
-.features-first-list li:nth-child(2) > h3 {
-    margin-top: 23px;
 }
 
 .features-reason-title.second {
@@ -462,6 +456,7 @@ a {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    z-index: 1;
 }
 
 .reason-number,
@@ -472,10 +467,12 @@ a {
 
 .features-second-list {
     background-color: #eeeeee;
-    height: 255px;
+    min-height: 255px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: -16px;
+    margin-bottom: -17px;
 }
 
 .modal-search .button {
@@ -599,7 +596,7 @@ fieldset {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 217px;
+    min-height: 217px;
 }
 
 .living-conditions-button {
@@ -623,6 +620,11 @@ fieldset {
 .search-sort-items .sort-link {
     color: #cacaca;
     border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-link.sort-link-active {
+    color: #81b3d2;
+    border-bottom: none;
 }
 
 .search-count {
@@ -697,15 +699,16 @@ fieldset {
 .hotel-title {
     font-size: 21px;
     font-weight: bold;
-    height: 16px;
+    min-height: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-top: -5px;
+    margin-top: -3px;
     cursor: pointer;
+    margin-bottom: 9px;
 }
 
 .about-hotel {
@@ -815,6 +818,7 @@ fieldset {
     display: flex;
     position: relative;
     top: -5px;
+    margin-bottom: 1px;
 }
 
 .hotel-type {
@@ -1233,7 +1237,11 @@ input[type="radio"].visually-hidden {
 
 .people p {
     margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1402,27 +1410,45 @@ input[type="radio"].visually-hidden {
 
 .active {
     display: block;
+    -webkit-animation: show .7s;
     animation: show .7s;
 }
 
 .error {
+    -webkit-animation: shake .7s;
     animation: shake .7s;
 }
 
-@keyframes show {
+@-webkit-keyframes show {
     from {
+        -webkit-transform: translateY(-100px) translateX(-284px);
         transform: translateY(-100px) translateX(-284px);
         opacity: 0;
     }
 
     to {
+        -webkit-transform: translateY(0) translateX(-284px);
         transform: translateY(0) translateX(-284px);
     }
 }
 
-@keyframes shake {
+@keyframes show {
+    from {
+        -webkit-transform: translateY(-100px) translateX(-284px);
+        transform: translateY(-100px) translateX(-284px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0) translateX(-284px);
+        transform: translateY(0) translateX(-284px);
+    }
+}
+
+@-webkit-keyframes shake {
     0%,
     100% {
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -1431,6 +1457,7 @@ input[type="radio"].visually-hidden {
     50%,
     70%,
     90% {
+        -webkit-transform: translateX(-45%);
         transform: translateX(-45%)
     }
 
@@ -1438,6 +1465,32 @@ input[type="radio"].visually-hidden {
     40%,
     60%,
     80% {
+        -webkit-transform: translateX(-55%);
+        transform: translateX(-55%)
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-45%);
+        transform: translateX(-45%)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(-55%);
         transform: translateX(-55%)
     }
 }
