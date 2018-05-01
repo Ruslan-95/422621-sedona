@@ -48,7 +48,8 @@ a {
 .main-slogan,
 .features-item {
     font-size: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    margin-top: 17px;
 }
 
 .features-item {
@@ -83,6 +84,7 @@ a {
 
 .features-reason-title {
     font-size: 21px;
+    margin-top: 23px;
 }
 
 .features-first-list li:nth-child(1),
@@ -91,20 +93,13 @@ a {
     margin-bottom: 4px;
 }
 
-.features-first-list li:nth-child(1) > h3 {
-    margin-top: 21px;
-}
-
-.features-first-list li:nth-child(2) > h3 {
-    margin-top: 23px;
-}
-
 .features-reason-title.second {
     margin-top: 10px;
     margin-bottom: 22px;
     line-height: 21px;
     padding-left: 130px;
     padding-right: 130px;
+    padding-top: 16px;
 }
 
 .reason-number.second {
@@ -117,7 +112,7 @@ a {
     margin-left: 59px;
     margin-top: 0;
     line-height: 21px;
-    margin-bottom: 13px;
+    margin-bottom: -3px;
 }
 
 .offer-title {
@@ -142,17 +137,18 @@ a {
 .site-navigation {
     background-color: #ffffff;
     list-style: none;
-    margin: 0;
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 1200px;
+    max-width: 1200px;
     min-height: 56px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main-header-logo {
@@ -185,28 +181,24 @@ a {
 }
 
 .site-navigation li:first-child {
-    position: relative;
-    left: 27px;
-    bottom: 14px;
+    margin-left: 28px;
+    margin-top: 0;
 }
 
 .site-navigation li:nth-child(2) {
-    position: relative;
-    right: 32px;
-    bottom: 13px;
+    margin-top: 0;
+    margin-left: 31px;
 }
 
 .site-navigation li:nth-child(3) {
-    position: relative;
-    left: 28px;
     line-height: 26px;
-    bottom: 13px;
+    margin-left: 150px;
+    margin-top: 0;
 }
 
 .site-navigation li:last-child {
-    position: relative;
-    right: 26px;
-    bottom: 14px;
+    margin-left: 35px;
+    margin-top: 0;
 }
 
 .main-navigation {
@@ -286,9 +278,10 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 313px;
-    margin-top: 26px;
+    margin-top: 28px;
     padding-left: 73px;
     text-align: left;
+    padding-bottom: 0;
 }
 
 .living-conditions .filter-name {
@@ -312,6 +305,10 @@ a {
     padding-right: 0;
 }
 
+.checkbox:focus + span {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
 .checkbox:checked + .custom-checkbox {
     background: url(../img/checkbox-on.svg) no-repeat;
 }
@@ -324,7 +321,8 @@ a {
     background: url(../img/checkbox-off2.svg) no-repeat;
 }
 
-.checkbox:checked:disabled + span + span, .checkbox:disabled + span + span {
+.checkbox:checked:disabled .filter-name,
+.checkbox:disabled .filter-name {
     color: #6a6a6a;
 }
 
@@ -335,7 +333,7 @@ a {
 }
 
 .living-conditions-list {
-    padding-left: 0px;
+    padding-left: 0;
     margin-left: -11px;
 }
 
@@ -365,7 +363,8 @@ a {
     box-sizing: border-box;
     width: 313px;
     text-align: left;
-    margin-top: 26px;
+    margin-top: 29px;
+    margin-bottom: -4px;
 }
 
 .footer-hashtag-wrapper {
@@ -391,7 +390,7 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     margin-right: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 13px;
 }
 
 .social-list-catalog {
@@ -465,6 +464,7 @@ a {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    z-index: 1;
 }
 
 .reason-number,
@@ -475,10 +475,12 @@ a {
 
 .features-second-list {
     background-color: #eeeeee;
-    height: 255px;
+    min-height: 255px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: -33px;
+    margin-bottom: -2px;
 }
 
 .modal-search .button {
@@ -541,7 +543,7 @@ a {
     box-sizing: border-box;
     padding: 15px 0;
     min-height: 120px;
-    margin-top: -121px;
+    margin-top: -128px;
 }
 
 .footer-hashtag-catalog {
@@ -558,7 +560,7 @@ a {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
     margin-left: 0;
 }
 
@@ -602,7 +604,8 @@ fieldset {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 217px;
+    margin-top: 2px;
+    min-height: 217px;
 }
 
 .living-conditions-button {
@@ -626,6 +629,11 @@ fieldset {
 .search-sort-items .sort-link {
     color: #cacaca;
     border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-link.sort-link-active {
+    color: #81b3d2;
+    border-bottom: none;
 }
 
 .search-count {
@@ -700,15 +708,16 @@ fieldset {
 .hotel-title {
     font-size: 21px;
     font-weight: bold;
-    height: 16px;
+    min-height: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-top: -5px;
+    margin-top: -3px;
     cursor: pointer;
+    margin-bottom: 8px;
 }
 
 .about-hotel {
@@ -818,10 +827,12 @@ fieldset {
     display: flex;
     position: relative;
     top: -5px;
+    margin-bottom: 1px;
 }
 
 .hotel-type {
     margin-right: 40px;
+    max-width: 100px;
 }
 
 .sort {
@@ -1109,7 +1120,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright {
     min-width: 200px;
     margin-left: 32px;
-    margin-bottom: 19px;
+    margin-bottom: 7px;
 }
 
 .footer-copyright-catalog {
@@ -1176,7 +1187,7 @@ input[type="radio"].visually-hidden {
     margin-right: -1px;
 }
 
-.people p:nth-child(2) > label {
+.people-row:nth-child(2) > label {
     margin-right: 24px
 }
 
@@ -1236,7 +1247,11 @@ input[type="radio"].visually-hidden {
 
 .people p {
     margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -1266,6 +1281,7 @@ input[type="radio"].visually-hidden {
 
 .main-container {
     margin-bottom: -14px;
+    margin-top: -2px;
 }
 
 .site-navigation a:hover,
@@ -1386,7 +1402,7 @@ input[type="radio"].visually-hidden {
     color: #81b3d2;
 }
 
-.active-catalog {
+.active-catalog a {
     color: #766357;
 }
 
@@ -1404,27 +1420,45 @@ input[type="radio"].visually-hidden {
 
 .active {
     display: block;
+    -webkit-animation: show .7s;
     animation: show .7s;
 }
 
 .error {
+    -webkit-animation: shake .7s;
     animation: shake .7s;
 }
 
-@keyframes show {
+@-webkit-keyframes show {
     from {
+        -webkit-transform: translateY(-100px) translateX(-284px);
         transform: translateY(-100px) translateX(-284px);
         opacity: 0;
     }
 
     to {
+        -webkit-transform: translateY(0) translateX(-284px);
         transform: translateY(0) translateX(-284px);
     }
 }
 
-@keyframes shake {
+@keyframes show {
+    from {
+        -webkit-transform: translateY(-100px) translateX(-284px);
+        transform: translateY(-100px) translateX(-284px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0) translateX(-284px);
+        transform: translateY(0) translateX(-284px);
+    }
+}
+
+@-webkit-keyframes shake {
     0%,
     100% {
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
 
@@ -1433,6 +1467,7 @@ input[type="radio"].visually-hidden {
     50%,
     70%,
     90% {
+        -webkit-transform: translateX(-45%);
         transform: translateX(-45%)
     }
 
@@ -1440,6 +1475,32 @@ input[type="radio"].visually-hidden {
     40%,
     60%,
     80% {
+        -webkit-transform: translateX(-55%);
+        transform: translateX(-55%)
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-45%);
+        transform: translateX(-45%)
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(-55%);
         transform: translateX(-55%)
     }
 }
