@@ -1285,14 +1285,10 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
 }
 
-main {
-    display: block;
-}
-
 .main-container {
     margin-bottom: -14px;
     margin-top: -2px;
-    /*display: block;*/
+    display: block;
 }
 
 .site-navigation a:hover,
